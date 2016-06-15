@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dynamic_titlebg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_black_science_bg"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="3dp"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_title_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"  />
+
+        <TextView
+            android:id="@+id/tv_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="完成(0/8)"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"  />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:layout_above="@+id/rl_photograph"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"></GridView>
+
+    <RelativeLayout
+        android:id="@+id/rl_photograph"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/iv_photograph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@mipmap/draw_camera" />
+        <TextView
+            android:id="@+id/tv_photo_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="相册列表"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
